@@ -2,67 +2,134 @@ export default function Capabilities() {
   return (
     <main className="py-32">
       <div className="container">
-        {/* Page Header */}
-        <div className="max-w-3xl mb-20">
-          <p className="text-sm font-medium text-clay mb-4">
-            Kapabilitas
+
+        {/* Header */}
+        <div className="max-w-3xl mb-28">
+          <p className="text-xs tracking-[0.2em] uppercase text-neutral-400 mb-6">
+            Capabilities
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-display leading-tight mb-6">
-            Rekayasa Perangkat Lunak
+          <h1 className="text-4xl md:text-5xl font-display leading-tight mb-8">
+            Engineering structured digital systems
             <br />
-            dengan Presisi dan Struktur.
+            with clarity and discipline.
           </h1>
 
-          <p className="text-lg text-stone">
-            Kami merancang, membangun, dan mengembangkan sistem digital
-            yang terstruktur untuk mendukung pertumbuhan bisnis modern.
+          <p className="text-lg text-neutral-600">
+            We design and build digital infrastructures that are precise,
+            scalable, and intentionally architected for long-term growth.
           </p>
         </div>
 
-        {/* Capabilities Grid */}
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="border border-navy/10 rounded-lg p-10">
-            <h3 className="text-xl font-semibold mb-4">
-              Custom Software Development
-            </h3>
-            <p className="text-stone">
-              Pengembangan aplikasi kustom berbasis kebutuhan bisnis,
-              dengan arsitektur yang scalable dan teruji.
-            </p>
+        {/* Capabilities List */}
+        <div className="space-y-24">
+
+          {/* Item 1 */}
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-2xl font-medium mb-6">
+                Custom Software Engineering
+              </h2>
+            </div>
+
+            <div className="text-neutral-600 space-y-4">
+              <p>
+                Tailored systems built around your operational model —
+                not forced into generic frameworks.
+              </p>
+
+              <ul className="space-y-2 text-sm">
+                <li>Domain-driven architecture</li>
+                <li>Scalable backend systems</li>
+                <li>Long-term maintainability</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="border border-navy/10 rounded-lg p-10">
-            <h3 className="text-xl font-semibold mb-4">
-              Web & Platform Engineering
-            </h3>
-            <p className="text-stone">
-              Pembangunan platform web modern dengan performa tinggi
-              dan struktur kode yang maintainable.
-            </p>
+          {/* Divider */}
+          <div className="border-t border-neutral-200" />
+
+          {/* Item 2 */}
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-2xl font-medium mb-6">
+                Web & Platform Engineering
+              </h2>
+            </div>
+
+            <div className="text-neutral-600 space-y-4">
+              <p>
+                High-performance web platforms designed with clarity,
+                structure, and measurable technical discipline.
+              </p>
+
+              <ul className="space-y-2 text-sm">
+                <li>Modern frontend architecture</li>
+                <li>API-first system design</li>
+                <li>Performance optimization</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="border border-navy/10 rounded-lg p-10">
-            <h3 className="text-xl font-semibold mb-4">
-              System Integration
-            </h3>
-            <p className="text-stone">
-              Integrasi sistem dan API untuk memastikan interoperabilitas
-              yang stabil dan efisien.
-            </p>
+          <div className="border-t border-neutral-200" />
+
+          {/* Item 3 */}
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-2xl font-medium mb-6">
+                System Integration
+              </h2>
+            </div>
+
+            <div className="text-neutral-600 space-y-4">
+              <p>
+                Connecting digital ecosystems with precision and stability.
+              </p>
+
+              <ul className="space-y-2 text-sm">
+                <li>API orchestration</li>
+                <li>Legacy system bridging</li>
+                <li>Data synchronization strategies</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="border border-navy/10 rounded-lg p-10">
-            <h3 className="text-xl font-semibold mb-4">
-              Product Strategy & Architecture
-            </h3>
-            <p className="text-stone">
-              Perencanaan arsitektur produk digital dengan pendekatan
-              teknis dan bisnis yang seimbang.
-            </p>
+          <div className="border-t border-neutral-200" />
+
+          {/* Item 4 */}
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-2xl font-medium mb-6">
+                Product Strategy & Architecture
+              </h2>
+            </div>
+
+            <div className="text-neutral-600 space-y-4">
+              <p>
+                Technical decision-making grounded in both business logic
+                and engineering integrity.
+              </p>
+
+              <ul className="space-y-2 text-sm">
+                <li>Scalable product planning</li>
+                <li>Technical feasibility validation</li>
+                <li>Architecture blueprinting</li>
+              </ul>
+            </div>
           </div>
+
         </div>
+
+        {/* Closing Statement */}
+        <div className="mt-32 max-w-2xl">
+          <p className="text-xl leading-relaxed text-neutral-700">
+            We don’t ship features.
+            <br />
+            We design systems that evolve.
+          </p>
+        </div>
+
       </div>
     </main>
-  )
+  );
 }
