@@ -6,6 +6,7 @@ import Company from "@/pages/Company";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
 import Work from "@/pages/Work";
+// import { Company } from "./pages/Company";
 
 function App() {
   return (
