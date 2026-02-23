@@ -1,35 +1,27 @@
-import Layout from "@/components/Layout";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { LanguageProvider } from "@/contexts/LanguageContext";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Layout from "@/components/layout/Layout";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
+import Capabilities from "@/pages/Capabilities";
+import Company from "@/pages/Company";
+import Home from "@/pages/Home";
+import NotFound from "@/pages/NotFound";
+import Work from "@/pages/Work";
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <LanguageProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Routes>
-            <Route element={<Layout />}>
-              <Route path="/" element={<Index />} />
-              <Route path="/capabilities" element={<Capabilities />} />
-              <Route path="/work" element={<Work />} />
-              <Route path="/company" element={<Company />} />
-            </Route>
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
-      </LanguageProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/capabilities" element={<Capabilities />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/company" element={<Company />} />
+        </Route>
+
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
 
 export default App;
