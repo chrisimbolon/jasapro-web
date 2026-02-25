@@ -72,12 +72,12 @@ export default function Navbar() {
           </div>
 
           {/* CTA */}
-          <Link
+          {/* <Link
             to="/contact"
             className="hidden md:inline-block border border-neutral-900 px-6 py-2 text-sm font-medium hover:bg-neutral-900 hover:text-white transition"
           >
             {t("nav.cta")}
-          </Link>
+          </Link> */}
 
         </div>
       </div>
