@@ -32,6 +32,27 @@ export default function Company() {
           </p>
         </div>
 
+        {/* Company Profile Download */}
+<section className="py-12 border-t border-neutral-200/60">
+  <div className="max-w-2xl">
+    <h3 className="text-lg font-medium mb-3">
+      {t("company.profile.title")}
+    </h3>
+
+    <p className="text-neutral-600 text-sm leading-relaxed mb-6">
+      {t("company.profile.description")}
+    </p>
+
+    <a
+      href="/documents/company-profile-ID.pdf"
+      download
+      className="inline-flex items-center gap-2 text-sm font-medium border border-neutral-300 px-5 py-3 hover:border-neutral-900 transition-colors"
+    >
+      ↓ {t("company.profile.download")}
+    </a>
+  </div>
+</section>
+
         {/* Philosophy */}
         <section className="grid md:grid-cols-2 gap-20 py-20 border-t border-neutral-200/60">
           <div>
