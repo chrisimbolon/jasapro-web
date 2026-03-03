@@ -82,6 +82,13 @@ company: {
   description:
     "Jasapro adalah studio rekayasa digital independen yang berfokus pada pembangunan sistem perangkat lunak yang terstruktur, skalabel, dan berorientasi jangka panjang. Kami meyakini bahwa teknologi harus dirancang secara sadar — bukan sekadar diimprovisasi.",
 
+  profile: {
+    title: "Company Profile",
+    description:
+      "Unduh dokumen resmi perusahaan dalam format PDF untuk kebutuhan presentasi dan pengadaan.",
+    download: "Unduh Company Profile (PDF)",
+  },
+
   philosophy: {
     title: "Filosofi Kami",
     intro:
