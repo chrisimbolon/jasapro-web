@@ -8,7 +8,7 @@ export default {
   },
 
   home: {
-    eyebrow: "PT. JASAPRO INDONESIA",
+    eyebrow: "PT. JASA PRO INDONESIA",
 
     titleLine1: "Rekayasa sistem digital",
     titleLine2: "dengan struktur dan presisi.",
