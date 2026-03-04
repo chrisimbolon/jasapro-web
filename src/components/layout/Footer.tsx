@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <p>© {new Date().getFullYear()} Jasapro Indonesia</p>
+          <p>© {new Date().getFullYear()} Jasapro </p>
         </div>
       </div>
     </footer>
