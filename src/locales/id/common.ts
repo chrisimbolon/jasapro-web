@@ -132,6 +132,34 @@ company: {
       },
     ],
   },
+  leadership: {
+  eyebrow: "Kepemimpinan",
+  title: "Pendiri",
+
+  description:
+    "Jasapro didirikan oleh praktisi lintas disiplin yang menyatukan rekayasa perangkat lunak, strategi produk, dan pertumbuhan digital dalam satu fondasi kerja yang terstruktur.",
+
+  members: [
+    {
+      name: "Abdul Halik Nasution",
+      role: "Product Specialist",
+      bio:
+        "Berfokus pada perancangan strategi produk dan pengembangan solusi digital yang selaras dengan kebutuhan operasional bisnis. Menghubungkan tujuan organisasi dengan sistem digital yang terukur.",
+    },
+    {
+      name: "Prasetyo Hardi",
+      role: "Digital Marketing Specialist",
+      bio:
+        "Spesialis strategi pemasaran digital dengan fokus pada pertumbuhan, positioning brand, serta orkestrasi kanal digital untuk membangun ekosistem produk yang berkelanjutan.",
+    },
+    {
+      name: "Christyan Simbolon",
+      role: "Tech — Fullstack & DevOps",
+      bio:
+        "Berfokus pada arsitektur sistem, rekayasa backend, dan infrastruktur deployment modern. Membangun fondasi teknis yang skalabel, terstruktur, dan siap produksi.",
+    },
+  ],
+},
 },
 work: {
   eyebrow: "Karya",
