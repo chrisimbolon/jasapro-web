@@ -132,6 +132,34 @@ company: {
       },
     ],
   },
+  leadership: {
+  eyebrow: "Leadership",
+  title: "Founders",
+
+  description:
+    "Jasapro was founded by practitioners across product, technology, and digital growth disciplines, combining engineering rigor with strategic thinking to build sustainable digital systems.",
+
+  members: [
+    {
+      name: "Abdul Halik Nasution",
+      role: "Product Specialist",
+      bio:
+        "Focuses on product strategy and the design of digital solutions aligned with real operational needs, translating business objectives into structured digital systems.",
+    },
+    {
+      name: "Prasetyo Hardi",
+      role: "Digital Marketing Specialist",
+      bio:
+        "Specializes in digital growth strategy, brand positioning, and multi-channel marketing orchestration to support scalable product ecosystems.",
+    },
+    {
+      name: "Christyan Simbolon",
+      role: "Tech — Fullstack & DevOps",
+      bio:
+        "Focused on system architecture, backend engineering, and modern deployment infrastructure, building scalable and production-ready technical foundations.",
+    },
+  ],
+},
 },
 work: {
   eyebrow: "Work",
