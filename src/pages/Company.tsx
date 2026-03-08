@@ -15,7 +15,7 @@ export default function Company() {
     {
       name: "Abdul Halik Nasution",
       role: "Product Specialist",
-      photo: "/images/founders/Halik.jpeg",
+      photo: "/images/founders/A-Halik.jpeg",
       bio: "Focused on product strategy and user-centered digital systems. Halik ensures every product aligns with business objectives and operational clarity.",
     },
     {
