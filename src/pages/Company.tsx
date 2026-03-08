@@ -27,7 +27,7 @@ export default function Company() {
     {
       name: "Christyan Simbolon",
       role: "Technology Director",
-      photo: "/images/founders/Chris.jpg",
+      photo: "/images/founders/Chris.jpeg",
       bio: "Leads engineering architecture and system development, specializing in scalable backend systems, modern web platforms, and production infrastructure.",
     },
   ]
