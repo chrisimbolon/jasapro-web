@@ -154,7 +154,7 @@ company: {
     },
     {
       name: "Christyan Simbolon",
-      role: "Tech — Fullstack & DevOps",
+      role: "Technology Director",
       bio:
         "Focused on system architecture, backend engineering, and modern deployment infrastructure, building scalable and production-ready technical foundations.",
     },

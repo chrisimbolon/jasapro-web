@@ -154,9 +154,15 @@ company: {
     },
     {
       name: "Christyan Simbolon",
-      role: "Tech — Fullstack & DevOps",
+      role: "Technology Director",
       bio:
         "Berfokus pada arsitektur sistem, rekayasa backend, dan infrastruktur deployment modern. Membangun fondasi teknis yang skalabel, terstruktur, dan siap produksi.",
+    },
+    {
+     name: "Siswanto",
+     role: "Chief Strategy Officer",
+     bio:
+    "Berperan dalam merumuskan arah strategi jangka panjang Jasapro, mengidentifikasi peluang pasar, serta menyelaraskan pertumbuhan bisnis dengan inisiatif digital yang berkelanjutan.",
     },
   ],
 },
