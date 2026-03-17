@@ -158,6 +158,12 @@ company: {
       bio:
         "Focused on system architecture, backend engineering, and modern deployment infrastructure, building scalable and production-ready technical foundations.",
     },
+    {
+      name: "Siswanto",
+      role: "Chief Strategy Officer",
+      bio:
+        "Responsible for shaping Jasapro’s long-term strategic direction, identifying market opportunities, and aligning business growth with sustainable digital initiatives.",
+    },
   ],
 },
 },
