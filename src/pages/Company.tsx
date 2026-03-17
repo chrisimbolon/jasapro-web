@@ -11,26 +11,9 @@ export default function Company() {
     returnObjects: true,
   }) as any[]
 
-  const founders = [
-    {
-      name: "Abdul Halik Nasution",
-      role: "Product Specialist",
-      photo: "/images/founders/A-Halik.jpeg",
-      bio: "Focused on product strategy and user-centered digital systems. Halik ensures every product aligns with business objectives and operational clarity.",
-    },
-    {
-      name: "Prasetyo Hardi",
-      role: "Digital Marketing Specialist",
-      photo: "/images/founders/Hardy.jpeg",
-      bio: "Responsible for digital growth strategies, brand positioning, and performance-driven marketing initiatives across digital platforms.",
-    },
-    {
-      name: "Christyan Simbolon",
-      role: "Technology Director",
-      photo: "/images/founders/Chris.jpeg",
-      bio: "Leads engineering architecture and system development, specializing in scalable backend systems, modern web platforms, and production infrastructure.",
-    },
-  ]
+  const members = t("company.leadership.members", {
+    returnObjects: true,
+  }) as any[]
 
   return (
     <main className="py-32">
@@ -57,6 +40,7 @@ export default function Company() {
         {/* Company Profile Download */}
         <section className="py-12 border-t border-neutral-200/60">
           <div className="max-w-2xl">
+
             <h3 className="text-lg font-medium mb-3">
               {t("company.profile.title")}
             </h3>
@@ -72,12 +56,14 @@ export default function Company() {
             >
               ↓ {t("company.profile.download")}
             </a>
+
           </div>
         </section>
 
 
         {/* Philosophy */}
         <section className="grid md:grid-cols-2 gap-20 py-20 border-t border-neutral-200/60">
+
           <div>
             <h2 className="text-2xl font-semibold tracking-tight mb-6">
               {t("company.philosophy.title")}
@@ -92,11 +78,13 @@ export default function Company() {
             <p>{t("company.philosophy.paragraph1")}</p>
             <p>{t("company.philosophy.paragraph2")}</p>
           </div>
+
         </section>
 
 
         {/* Approach */}
         <section className="grid md:grid-cols-2 gap-20 py-20 border-t border-neutral-200/60">
+
           <div>
             <h2 className="text-2xl font-semibold tracking-tight mb-6">
               {t("company.approach.title")}
@@ -112,11 +100,13 @@ export default function Company() {
               <p key={i}>{item}</p>
             ))}
           </div>
+
         </section>
 
 
         {/* Principles */}
         <section className="py-20 border-t border-neutral-200/60">
+
           <h2 className="text-2xl font-semibold tracking-tight mb-12">
             {t("company.principles.title")}
           </h2>
@@ -125,58 +115,78 @@ export default function Company() {
             {principleItems.map((item, i) => (
               <div key={i}>
                 <h3 className="font-medium mb-4">{item.title}</h3>
+
                 <p className="text-neutral-600 text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
             ))}
           </div>
+
         </section>
 
 
-        {/* Leadership / Founders */}
+        {/* Leadership */}
         <section className="py-24 border-t border-neutral-200/60">
+
           <div className="max-w-3xl mb-16">
+
             <h2 className="text-3xl font-semibold tracking-tight mb-4">
-              Leadership
+              {t("company.leadership.title")}
             </h2>
 
             <p className="text-neutral-600 leading-relaxed">
-              Jasapro is led by a multidisciplinary team combining product
-              strategy, digital marketing expertise, and modern software
-              engineering.
+              {t("company.leadership.description")}
             </p>
+
           </div>
 
-          <div className="grid md:grid-cols-3 gap-16">
 
-            {founders.map((founder, i) => (
-              <div key={i} className="group">
+          {/* Leadership Grid */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-16">
 
-                <div className="mb-6 overflow-hidden">
-                  <img
-                    src={founder.photo}
-                    alt={founder.name}
-                    className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+            {members.map((member, i) => {
+
+              const imageName =
+                member.name === "Abdul Halik Nasution"
+                  ? "A-Halik.jpeg"
+                  : member.name === "Prasetyo Hardi"
+                  ? "Hardy.jpeg"
+                  : member.name === "Christyan Simbolon"
+                  ? "Chris.jpeg"
+                  : "Siswanto.jpeg"
+
+              return (
+                <div key={i} className="group">
+
+                  <div className="mb-6 overflow-hidden rounded-sm">
+
+                    <img
+                      src={`/images/founders/${imageName}`}
+                      alt={member.name}
+                      className="w-full aspect-[4/5] object-cover grayscale transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0"
+                    />
+
+                  </div>
+
+                  <h3 className="font-medium text-lg">
+                    {member.name}
+                  </h3>
+
+                  <p className="text-sm text-neutral-500 mb-4">
+                    {member.role}
+                  </p>
+
+                  <p className="text-sm text-neutral-600 leading-relaxed">
+                    {member.bio}
+                  </p>
+
                 </div>
-
-                <h3 className="font-medium text-lg">
-                  {founder.name}
-                </h3>
-
-                <p className="text-sm text-neutral-500 mb-4">
-                  {founder.role}
-                </p>
-
-                <p className="text-sm text-neutral-600 leading-relaxed">
-                  {founder.bio}
-                </p>
-
-              </div>
-            ))}
+              )
+            })}
 
           </div>
+
         </section>
 
       </div>
