@@ -147,22 +147,10 @@ company: {
         "Berfokus pada perancangan strategi produk dan pengembangan solusi digital yang selaras dengan kebutuhan operasional bisnis. Menghubungkan tujuan organisasi dengan sistem digital yang terukur.",
     },
     {
-      name: "Prasetyo Hardi",
-      role: "Digital Marketing Specialist",
-      bio:
-        "Spesialis strategi pemasaran digital dengan fokus pada pertumbuhan, positioning brand, serta orkestrasi kanal digital untuk membangun ekosistem produk yang berkelanjutan.",
-    },
-    {
       name: "Christyan Simbolon",
       role: "Technology Director",
       bio:
         "Berfokus pada arsitektur sistem, rekayasa backend, dan infrastruktur deployment modern. Membangun fondasi teknis yang skalabel, terstruktur, dan siap produksi.",
-    },
-    {
-     name: "Siswanto",
-     role: "Chief Strategy Officer",
-     bio:
-    "Berperan dalam merumuskan arah strategi jangka panjang Jasapro, mengidentifikasi peluang pasar, serta menyelaraskan pertumbuhan bisnis dengan inisiatif digital yang berkelanjutan.",
     },
   ],
 },

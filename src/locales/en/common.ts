@@ -147,23 +147,12 @@ company: {
         "Focuses on product strategy and the design of digital solutions aligned with real operational needs, translating business objectives into structured digital systems.",
     },
     {
-      name: "Prasetyo Hardi",
-      role: "Digital Marketing Specialist",
-      bio:
-        "Specializes in digital growth strategy, brand positioning, and multi-channel marketing orchestration to support scalable product ecosystems.",
-    },
-    {
       name: "Christyan Simbolon",
       role: "Technology Director",
       bio:
         "Focused on system architecture, backend engineering, and modern deployment infrastructure, building scalable and production-ready technical foundations.",
     },
-    {
-      name: "Siswanto",
-      role: "Chief Strategy Officer",
-      bio:
-        "Responsible for shaping Jasapro’s long-term strategic direction, identifying market opportunities, and aligning business growth with sustainable digital initiatives.",
-    },
+    
   ],
 },
 },
